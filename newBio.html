@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aesthetic Bio</title>
+    <style>
+      /* Your existing styles here */
+
+      .social-icon-facebook::before {
+        content: "\f39e"; /* Unicode for the Facebook icon */
+        font-family: "Font Awesome 5 Brands";
+      }
+
+      .social-icon-facebook:hover {
+        animation: bounce 0.5s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="profile-card">
+      <!-- Your existing profile content here -->
+      <div class="social-icons">
+        <a href="#" class="social-icon social-icon-facebook"></a>
+        <!-- Add other social icons as needed -->
+      </div>
+    </div>
+  </body>
+</html>
