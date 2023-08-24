@@ -3,40 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aesthetic Bio</title>
+    <title>Bionote</title>
     <style>
-      /* Your existing styles here */
-
-      .social-icon-facebook::before {
-        content: "\f39e"; /* Unicode for the Facebook icon */
-        font-family: "Font Awesome 5 Brands";
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
       }
 
-      .social-icon-facebook:hover {
-        animation: bounce 0.5s infinite;
+      .bionote {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
       }
 
-      @keyframes bounce {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-5px);
-        }
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .occupation {
+        font-size: 16px;
+        color: #666666;
+        margin-bottom: 15px;
+      }
+
+      .description {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333333;
+        margin-bottom: 20px;
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
   </head>
   <body>
-    <div class="profile-card">
-      <!-- Your existing profile content here -->
-      <div class="social-icons">
-        <a href="#" class="social-icon social-icon-facebook"></a>
-        <!-- Add other social icons as needed -->
+    <div class="bionote">
+      <img
+        class="profile-pic"
+        src="profile-picture.jpg"
+        alt="Profile Picture"
+      />
+      <div class="name">John Doe</div>
+      <div class="occupation">Web Developer</div>
+      <div class="description">
+        Passionate about creating elegant and functional web solutions. Enjoys
+        turning ideas into interactive experiences. Loves learning and staying
+        up-to-date with the latest technologies.
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/johndoe" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://twitter.com/johndoe" target="_blank">Twitter</a>
       </div>
     </div>
   </body>
